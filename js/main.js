@@ -40,15 +40,19 @@ angularMusicApp.controller('mainCntrlr', function($scope, $rootScope, MetaServic
 });
 
 angularMusicApp.controller('fooCntrlr', function($scope, $rootScope, MetaService) {
-    $scope.message = 'En construcción!';
+    $scope.message = '';
     $scope.title = 'Foo';
+    $scope.under = 'http://i792.photobucket.com/albums/yy207/ALXis0/398533_Pikaconstruction.gif';
+
     $rootScope.metaservice = MetaService;
     $rootScope.metaservice.set('Angular Rocks', 'Esto es la descripción por defecto', 'angular, rocks, default');
 });
 
 angularMusicApp.controller('barCntrlr', function($scope, $rootScope, MetaService) {
-    $scope.message = 'En construcción!';
+    $scope.message = '';
     $scope.title = 'Bar';
+    $scope.under = 'http://i792.photobucket.com/albums/yy207/ALXis0/398533_Pikaconstruction.gif';
+
     $rootScope.metaservice = MetaService;
     $rootScope.metaservice.set('Angular Rocks', 'Esto es la descripción por defecto', 'angular, rocks, default');
 });
