@@ -55,12 +55,18 @@ angularMusicApp.controller('rollingsCntrlr', function($scope, $sce) {
     $scope.video = $sce.trustAsResourceUrl('https://www.youtube.com/embed/O4irXQhgMqg');
 });
 
-angularMusicApp.controller('beatlesCntrlr', function($scope) {
+angularMusicApp.controller('beatlesCntrlr', function($scope, $sce) {
     $scope.message = 'The Beatles';
     $scope.title = 'The Beatles';
+    $scope.image = 'http://cdn4.pitchfork.com/news/66941/b305b79a.jpg';
+    $scope.video = $sce.trustAsResourceUrl('https://www.youtube.com/embed/Ho2e0zvGEWE');
+
 });
 
-angularMusicApp.controller('queenCntrlr', function($scope) {
+angularMusicApp.controller('queenCntrlr', function($scope, $sce) {
     $scope.message = 'Queen';
     $scope.title = 'Queen';
+    $scope.image = 'http://www.officialcharts.com/imagegen.ashx?image=/media/317949/queen.jpg&width=796&height=420';
+    $scope.video = $sce.trustAsResourceUrl('https://www.youtube.com/embed/fJ9rUzIMcZQ');
+
 });
