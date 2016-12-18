@@ -36,21 +36,21 @@ angularMusicApp.controller('mainCntrlr', function($scope, $rootScope, MetaServic
     $scope.message = 'You are in the Homepage!';
     $scope.title = 'Home';
     $rootScope.metaservice = MetaService;
-    $rootScope.metaservice.set('Angular Rocks', 'Esto es la descripción por defecto', 'angular, rocks, default')
+    $rootScope.metaservice.set('Angular Rocks', 'Esto es la descripción por defecto', 'angular, rocks, default');
 });
 
 angularMusicApp.controller('fooCntrlr', function($scope, $rootScope, MetaService) {
     $scope.message = 'En construcción!';
     $scope.title = 'Foo';
     $rootScope.metaservice = MetaService;
-    $rootScope.metaservice.set('Angular Rocks', 'Esto es la descripción por defecto', 'angular, rocks, default')
+    $rootScope.metaservice.set('Angular Rocks', 'Esto es la descripción por defecto', 'angular, rocks, default');
 });
 
 angularMusicApp.controller('barCntrlr', function($scope, $rootScope, MetaService) {
     $scope.message = 'En construcción!';
     $scope.title = 'Bar';
     $rootScope.metaservice = MetaService;
-    $rootScope.metaservice.set('Angular Rocks', 'Esto es la descripción por defecto', 'angular, rocks, default')
+    $rootScope.metaservice.set('Angular Rocks', 'Esto es la descripción por defecto', 'angular, rocks, default');
 });
 
 angularMusicApp.controller('rollingsCntrlr', function($scope, $sce, $rootScope, MetaService) {
