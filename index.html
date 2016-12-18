@@ -2,12 +2,11 @@
 <html ng-app="angularMusicApp" ng-controller="mainCntrlr">
 	<head>
 		
+		<title ng-bind="metaservice.metaTitle()">Angular Rocks</title>
+    	<meta name="description" content="{{ metaservice.metaDescription() }}" />
+    	<meta name="keywords" content="{{ metaservice.metaKeywords() }}" />
 		<meta charset="UTF-8" />
-		<meta name="title" content="Angular Rocks" />
-		<meta name="description" content="Esto es la descripción por defecto" />
-		<meta name="keywords" content="angular, rocks, default" />
 
-		<title>{{ title }}</title>
 
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 
