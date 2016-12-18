@@ -45,11 +45,14 @@ angularMusicApp.controller('fooCntrlr', function($scope) {
 angularMusicApp.controller('barCntrlr', function($scope) {
     $scope.message = 'En construcción!';
     $scope.title = 'Bar';
+
 });
 
-angularMusicApp.controller('rollingsCntrlr', function($scope) {
+angularMusicApp.controller('rollingsCntrlr', function($scope, $sce) {
     $scope.message = 'The Rolling Stones';
     $scope.title = 'The Rolling Stones';
+    $scope.image = 'http://www.billboard.com/files/media/the-rolling-stones-1964-billboard-650.jpg';
+    $scope.video = $sce.trustAsResourceUrl('https://www.youtube.com/embed/O4irXQhgMqg');
 });
 
 angularMusicApp.controller('beatlesCntrlr', function($scope) {

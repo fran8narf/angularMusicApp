@@ -9,19 +9,26 @@
 
 		<title>{{ title }}</title>
 
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
 	</head>
 	<body>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#foo">Foo</a></li>
-			<li><a href="#bar">Bar</a></li>
-			<li><a href="#the-rolling-stones">The Rolling Stones</a></li>
-			<li><a href="#the-beatles">The Beatles</a></li>
-			<li><a href="#queen">Queen</a></li>
-		</ul>
+		<header>
+			<ul class="top-menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#foo">Foo</a></li>
+				<li><a href="#bar">Bar</a></li>
+				<li><a href="#the-rolling-stones">The Rolling Stones</a></li>
+				<li><a href="#the-beatles">The Beatles</a></li>
+				<li><a href="#queen">Queen</a></li>
+			</ul>
+		<header>
+
 
 		<div class="views-cont">
-			<div ng-view></div>
+			<div ng-view>
+				
+			</div>
 		</div>
 
 		<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.7/angular.min.js"></script> 
